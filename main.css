@@ -1,0 +1,55 @@
+nav {
+	background-color: none;
+}
+
+.navbar-brand {
+	color: #ffffff;
+}
+
+.navbar-brand:hover {
+	color: #666563;
+}
+
+.navbar-nav > li {
+	display: block;	
+}
+
+.nav-item > a {
+	color: #ffffff;
+}
+
+.navbar-nav > li > a:hover {
+	background-color: transparent!important;
+	color: #666563;
+}
+
+.navbar-nav > li > a:focus {
+	background-color: transparent!important;
+	color: #666563;
+}
+
+.navbar-nav > .active {
+	background-color: transparent!important;
+	color: #666563;
+}
+
+.navbar-toggle {
+	border-color: #ffffff;
+	border-width: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+.jumbotron {
+	margin: 0!important;
+	padding: 20px;
+	background-color: #f4dc41!important;
+	height: 100vh;
+}
+
+#about {
+	height: 100vh;
+	background-color: #a5a4a2;
+}
