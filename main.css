@@ -45,7 +45,7 @@ nav {
 .jumbotron {
 	margin: 0!important;
 	padding: 20px;
-	background-color: #f4dc41;
+	background-color: #f4dc41!important;
 	height: 100vh;
 }
 
