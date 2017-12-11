@@ -49,6 +49,19 @@ nav {
 	height: 100vh;
 }
 
+#face {
+	height: 30vh;
+}
+
+#header-text {
+	display: block;
+}
+
+#pdf {
+	width: 80vw;
+	height: 75vh;
+}
+
 .container {
 	padding: 50px;
 }
@@ -63,7 +76,12 @@ nav {
 	background-color: #f4dc41;
 }
 
-#contact {
+#resume {
 	height: 100vh;
 	background-color: #a5a4a2;
+}
+
+#contact {
+	height: 100vh;
+	background-color: #f4dc41;
 }
