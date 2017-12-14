@@ -49,6 +49,21 @@ nav {
 	height: 100vh;
 }
 
+.container {
+	padding: 50px;
+}
+
+.text-box {
+	background-color: #eaecef;
+	padding: 30px;
+	width: 70vw;
+	height: 70vh;
+	border-radius: 30px;
+	font-family: 'Helvetica Neue';
+	font-weight: 200;
+	font-size: 1.2em;
+}
+
 #face {
 	height: 30vh;
 }
@@ -62,13 +77,29 @@ nav {
 	height: 75vh;
 }
 
-.container {
-	padding: 50px;
-}
-
 #about {
 	height: 100vh;
 	background-color: #a5a4a2;
+}
+
+#bear img {
+	height: 20vh;
+}
+
+.slideAnim {
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all .55s ease-in;
+	-moz-transition: all .55s ease-in;
+	-ms-transition: all .55s ease-in;
+	-o-transition: all .55s ease-in;
+	transition: all .55s ease-in;
+}
+
+.slideAnim[data-position="left"] { left: -20%; }
+
+.slideAnim[data-position="left"].viewed {
+	left: 0%;
 }
 
 #projects {

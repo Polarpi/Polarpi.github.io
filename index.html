@@ -8,7 +8,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="scroll.js"></script>
+	<script text="text/javascript" src="scroll.js"></script>
+	<script text="text/javascript" src="scrollview.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-fixed-top">
@@ -46,12 +47,21 @@
   		<div class="container">
   			<h1 class="display-3">About Me.</h1>
 			<p class="lead">UIUC Computer Science 2021</p>
+			<div class="container text-box">
+				<p>I love polar bears, violin, singing, and art :)</p>
+			</div>
+			<div id="bear" data-position="left" class="notViewed slideAnim floatl">
+				<img src="img/bear.png" alt="bear">
+			</div>
   		</div>
   	</div>
   	<div class="container-fluid" id="projects">
   		<div class="container">
   			<h1 class="display-3">My Projects.</h1>
 			<p class="lead">UIUC Computer Science 2021</p>
+			<div class="container text-box">
+				<p>Coming Soon!</p>
+			</div>
   		</div>
   	</div>
   	<div class="container-fluid" id="resume">
