@@ -46,7 +46,7 @@ nav {
 	margin: 0!important;
 	padding: 20px;
 	background-color: #f4dc41!important;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .container {
@@ -57,7 +57,7 @@ nav {
 	background-color: #47484f;
 	padding: 30px;
 	width: 80vw;
-	height: 80vh;
+	min-height: 80vh;
 	border-radius: 15px;
 	color: #ffffff;
 	font-family: 'Source Code Pro', monospace;
@@ -99,7 +99,7 @@ nav {
 }
 
 #about {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #a5a4a2;
 }
 
@@ -132,16 +132,16 @@ nav {
 }
 
 #projects {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #f4dc41;
 }
 
 #resume {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #a5a4a2;
 }
 
 #contact {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #f4dc41;
 }
