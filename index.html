@@ -7,13 +7,14 @@
 	<meta name="author" content="Eugenia Chen">
 
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	<script text="text/javascript" src="scroll.js"></script>
 	<script text="text/javascript" src="scrollview.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-fixed-top">
+	<!--<nav class="navbar navbar-fixed-top">
 		<div class="container-fluid">
 	  		<div class="navbar-header">
 		  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,11 +33,32 @@
 		  		</ul>
 		  	</div>
 		</div>
+  	</nav>-->
+  	<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<!--<div class="container-fluid">-->
+	  		<!--<div class="navbar-header">-->
+		  		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContnet" aria-expanded="false" aria-label="Toggle navigation">
+		        		<span class="navbar-toggler-icon"></span>
+	      		</button>
+	  		<a class="navbar-brand nav-link active" href="#home">Home</a>
+		  	<!--</div>-->
+		  	<div class="collapse navbar-collapse" id="myNavbar">
+		  		<ul class="navbar-nav smooth-scroll">
+			  		<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+			  		<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+			  		<li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+			  		<li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+		  		</ul>
+		  	</div>
+		<!--</div>-->
   	</nav>
-	<div class="jumbotron" id="home">
+		<div class="jumbotron" id="home">
 		<div class="container">
 			<div class="text-center">
-				<img class="icon" id="face" src="img/me.png">
+				<div class="icon">
+					<img class="default" src="img/me.png"/>
+					<img class="hover" src="img/me-blink.png"/>
+				</div>
 			</div>
 			<div class="text-center" id="header-text">
 				<h1>Eugenia Chen</h1>
@@ -64,9 +86,46 @@
   		<div class="container">
   			<h1 class="display-3">My Projects.</h1>
 			<p class="lead">UIUC Computer Science 2021</p>
-			<div class="container text-box">
-				<p>Coming Soon!</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="project box">
+							<div class="modal fade">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title">Modal title</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        <p>Modal body text goes here.</p>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary">Save changes</button>
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="project box">
+
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="project box">
+
+						</div>
+					</div>
+				</div>
 			</div>
+			<!--<div class="container text-box">
+				<p>Coming Soon!</p>
+			</div>-->
   		</div>
   	</div>
   	<div class="container-fluid" id="resume">
@@ -86,8 +145,8 @@
   	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
