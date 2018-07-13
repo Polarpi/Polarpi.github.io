@@ -128,7 +128,7 @@ nav {
 }
 
 .icon img {
-	height: 30vh;
+	height: 50vh;
 }
 
 .icon img.hover {
@@ -145,6 +145,7 @@ nav {
 }
 
 #header-text {
+	padding-top: 20px;
 	display: block;
 }
 
