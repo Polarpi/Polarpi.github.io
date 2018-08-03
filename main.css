@@ -192,6 +192,46 @@ nav {
 	background-color: #f4dc41;
 }
 
+.project-title {
+	font-family: 'Source Code Pro', monospace;
+}
+
+.project-date {
+	color: #f9ae2c;
+	padding-bottom: 20px;
+}
+
+.project-img {
+	margin-bottom: 20px;
+}
+
+.project-btn {
+	margin: 2px;
+}
+
+.github-img {
+	height: 1.2em;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.github-btn {
+	width: 38px;
+	height: 38px;
+	position: relative;
+}
+
+.modal-title {
+	color: #47484f;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.modal-body {
+	color: #47484f;
+}
+
 #resume {
 	min-height: 100vh;
 	background-color: #a5a4a2;
